@@ -1,0 +1,283 @@
+```css
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #f0f7ed,
+        #e1f0e9,
+        #e6edf9
+    );
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+body > header {
+    background: linear-gradient(
+        135deg,
+        #dcecc9,
+        #b8dfd0,
+        #c9d8ef
+    );
+    padding: 20px;
+    border-bottom: 1px solid #c5d6cb;
+}
+
+body > header h1 {
+    max-width: 900px;
+    margin: auto;
+    color: #315b45;
+}
+
+/* Navigation */
+nav {
+    max-width: 900px;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    color: #365b46;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #438b72;
+}
+
+/* Main */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Kotak Section */
+section {
+    background: linear-gradient(
+        135deg,
+        #e0f3df,
+        #c8e6d9,
+        #d5e4f5
+    );
+    padding: 25px;
+    border: 2px solid #b4d2c2;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Gambar */
+main img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 8px;
+}
+
+/* Judul */
+h2 {
+    margin-bottom: 15px;
+    color: #315b45;
+}
+
+h3 {
+    margin-bottom: 5px;
+    color: #426c54;
+}
+
+/* Project */
+#project {
+    margin-top: 30px;
+}
+
+article {
+    padding: 20px;
+    margin: 18px 0;
+    background: linear-gradient(
+        120deg,
+        #f0f8e9,
+        #d8eee8
+    );
+    border: 1px solid #b4d2c8;
+    border-left: 5px solid #82ad89;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+article:last-child {
+    border-bottom: 1px solid #b4d2c8;
+}
+
+/* Form */
+form {
+    margin-top: 20px;
+}
+
+form p {
+    margin-bottom: 18px;
+    padding: 15px;
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.8),
+        rgba(236, 247, 239, 0.8)
+    );
+    border: 1px solid #c4dccb;
+    border-left: 4px solid #82ad89;
+    border-radius: 8px;
+}
+
+/* Label */
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #365b46;
+}
+
+/* Input, Select, Textarea */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #b8cdbd;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Efek input saat dipilih */
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #6ba984;
+    box-shadow: 0 0 0 3px rgba(107, 169, 132, 0.18);
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+}
+
+/* Tombol */
+button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 7px;
+    background: linear-gradient(
+        135deg,
+        #6eaa7b,
+        #438b72
+    );
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button[type="reset"] {
+    background: linear-gradient(
+        135deg,
+        #aab9c8,
+        #8297aa
+    );
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Aside */
+aside {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: linear-gradient(
+        135deg,
+        #e0f3df,
+        #d5e4f5
+    );
+    border-left: 5px solid #82ad89;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(
+        135deg,
+        #c9dfc7,
+        #c5d9ec
+    );
+    border-top: 1px solid #c5d6cb;
+    padding: 20px;
+    text-align: center;
+    color: #405b4b;
+    font-size: 14px;
+    margin-top: 35px;
+}
+
+/* Garis */
+hr {
+    display: none;
+}
+
+/* Tampilan HP */
+@media (max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    main {
+        margin-top: 20px;
+        padding: 0 14px;
+    }
+
+    main img {
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 20px 15px;
+    }
+
+    article {
+        padding: 15px;
+    }
+
+    form p {
+        padding: 12px;
+    }
+
+    button {
+        margin-bottom: 5px;
+    }
+}
+```
