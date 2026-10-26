@@ -27,32 +27,55 @@
     <main>
 
         <section>
+            <h2>Tambah Project Baru</h2>
+
+            <form id="formProyek">
+                <label for="judul">Judul Project:</label>
+                <input type="text" id="judul" required>
+
+                <label for="kategori">Kategori:</label>
+                <select id="kategori" required>
+                    <option value="">Pilih Kategori</option>
+                    <option value="Web App">Web App</option>
+                    <option value="Mobile App">Mobile App</option>
+                    <option value="Desktop App">Desktop App</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
+                </select>
+
+                <label for="anggaran">Anggaran (Rp):</label>
+                <input type="number" id="anggaran" min="1" required>
+
+                <label>
+                    <input type="checkbox" id="selesai">
+                    Project sudah selesai
+                </label>
+
+                <button type="submit">Tambah Project</button>
+
+                <p id="pesanForm"></p>
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Statistik Project</h2>
+
+            <p>Total Project: <span id="totalProyek">0</span></p>
+            <p>Project Selesai: <span id="proyekSelesai">0</span></p>
+            <p>Dalam Pengerjaan: <span id="proyekBerjalan">0</span></p>
+            <p>Total Anggaran: <span id="totalAnggaran">Rp0</span></p>
+        </section>
+
+        <hr>
+
+        <section>
             <h2>Daftar Project</h2>
 
-            <article>
-                <h3>Sistem Manajemen Inventori</h3>
-                <p>
-                    Sistem untuk mengelola data dan
-                    sirkulasi barang menggunakan database MySQL.
-                </p>
-            </article>
+            <label for="cariProyek">Cari Project:</label>
+            <input type="search" id="cariProyek" placeholder="Masukkan judul project...">
 
-            <article>
-                <h3>Aplikasi Kasir</h3>
-                <p>
-                    Aplikasi untuk menghitung transaksi,
-                    total pembayaran dan diskon.
-                </p>
-            </article>
-
-            <article>
-                <h3>Website Portofolio</h3>
-                <p>
-                    Website sederhana menggunakan HTML
-                    dengan struktur semantik.
-                </p>
-            </article>
-
+            <div id="daftarProyek"></div>
         </section>
 
     </main>
@@ -62,6 +85,8 @@
     <footer>
         <p>&copy; 2026 Portofolio Mahasiswa</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 

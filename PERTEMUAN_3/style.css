@@ -1,4 +1,3 @@
-```css
 /* Reset */
 * {
     margin: 0;
@@ -9,29 +8,25 @@
 /* Body */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(
-        135deg,
-        #f0f7ed,
-        #e1f0e9,
-        #e6edf9
-    );
+    background: linear-gradient(135deg,
+            #f0f7ed,
+            #e1f0e9,
+            #e6edf9);
     color: #333;
     line-height: 1.6;
 }
 
 /* Header */
-body > header {
-    background: linear-gradient(
-        135deg,
-        #dcecc9,
-        #b8dfd0,
-        #c9d8ef
-    );
+body>header {
+    background: linear-gradient(135deg,
+            #dcecc9,
+            #b8dfd0,
+            #c9d8ef);
     padding: 20px;
     border-bottom: 1px solid #c5d6cb;
 }
 
-body > header h1 {
+body>header h1 {
     max-width: 900px;
     margin: auto;
     color: #315b45;
@@ -68,12 +63,10 @@ main {
 
 /* Kotak Section */
 section {
-    background: linear-gradient(
-        135deg,
-        #e0f3df,
-        #c8e6d9,
-        #d5e4f5
-    );
+    background: linear-gradient(135deg,
+            #e0f3df,
+            #c8e6d9,
+            #d5e4f5);
     padding: 25px;
     border: 2px solid #b4d2c2;
     border-radius: 12px;
@@ -108,11 +101,9 @@ h3 {
 article {
     padding: 20px;
     margin: 18px 0;
-    background: linear-gradient(
-        120deg,
-        #f0f8e9,
-        #d8eee8
-    );
+    background: linear-gradient(120deg,
+            #f0f8e9,
+            #d8eee8);
     border: 1px solid #b4d2c8;
     border-left: 5px solid #82ad89;
     border-radius: 10px;
@@ -128,7 +119,7 @@ article:last-child {
     border-bottom: 1px solid #b4d2c8;
 }
 
-/* Form */
+/* Form Umum */
 form {
     margin-top: 20px;
 }
@@ -136,11 +127,9 @@ form {
 form p {
     margin-bottom: 18px;
     padding: 15px;
-    background: linear-gradient(
-        120deg,
-        rgba(255, 255, 255, 0.8),
-        rgba(236, 247, 239, 0.8)
-    );
+    background: linear-gradient(120deg,
+            rgba(255, 255, 255, 0.8),
+            rgba(236, 247, 239, 0.8));
     border: 1px solid #c4dccb;
     border-left: 4px solid #82ad89;
     border-radius: 8px;
@@ -185,16 +174,14 @@ textarea {
     resize: vertical;
 }
 
-/* Tombol */
+/* Tombol Umum */
 button {
     padding: 11px 18px;
     border: none;
     border-radius: 7px;
-    background: linear-gradient(
-        135deg,
-        #6eaa7b,
-        #438b72
-    );
+    background: linear-gradient(135deg,
+            #6eaa7b,
+            #438b72);
     color: white;
     cursor: pointer;
     font-weight: bold;
@@ -202,11 +189,9 @@ button {
 }
 
 button[type="reset"] {
-    background: linear-gradient(
-        135deg,
-        #aab9c8,
-        #8297aa
-    );
+    background: linear-gradient(135deg,
+            #aab9c8,
+            #8297aa);
 }
 
 button:hover {
@@ -219,22 +204,18 @@ aside {
     max-width: 900px;
     margin: 30px auto;
     padding: 20px;
-    background: linear-gradient(
-        135deg,
-        #e0f3df,
-        #d5e4f5
-    );
+    background: linear-gradient(135deg,
+            #e0f3df,
+            #d5e4f5);
     border-left: 5px solid #82ad89;
     border-radius: 8px;
 }
 
 /* Footer */
 footer {
-    background: linear-gradient(
-        135deg,
-        #c9dfc7,
-        #c5d9ec
-    );
+    background: linear-gradient(135deg,
+            #c9dfc7,
+            #c5d9ec);
     border-top: 1px solid #c5d6cb;
     padding: 20px;
     text-align: center;
@@ -246,6 +227,163 @@ footer {
 /* Garis */
 hr {
     display: none;
+}
+
+/* =====================================
+   FITUR HALAMAN PROJECT
+   ===================================== */
+
+/* Form Tambah Project */
+#formProyek {
+    margin-top: 20px;
+}
+
+#formProyek>label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+#formProyek input[type="text"],
+#formProyek input[type="number"],
+#formProyek select,
+#cariProyek {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 12px;
+    border: 1px solid #b8cdbd;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Efek Fokus Form Project */
+#formProyek input:focus,
+#formProyek select:focus,
+#cariProyek:focus {
+    border-color: #6ba984;
+    box-shadow: 0 0 0 3px rgba(107, 169, 132, 0.18);
+    outline: none;
+}
+
+/* Checkbox Status Project */
+#formProyek label:has(input[type="checkbox"]) {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 5px 0 15px;
+}
+
+#formProyek input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    accent-color: #438b72;
+}
+
+/* Tombol Tambah Project */
+#formProyek button[type="submit"] {
+    margin-top: 8px;
+}
+
+/* Pesan Form */
+#pesanForm {
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 6px;
+    color: #26734d;
+}
+
+#pesanForm:empty {
+    display: none;
+}
+
+/* Statistik Project */
+#totalProyek,
+#proyekSelesai,
+#proyekBerjalan,
+#totalAnggaran {
+    color: #315b45;
+    font-weight: bold;
+}
+
+/* Jarak Antar Statistik */
+#totalProyek,
+#proyekSelesai,
+#proyekBerjalan,
+#totalAnggaran {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+/* Pencarian Project */
+#cariProyek {
+    margin-top: 8px;
+}
+
+/* Daftar Project */
+#daftarProyek {
+    margin-top: 15px;
+}
+
+/* Kartu Project Dinamis */
+#daftarProyek article {
+    padding: 20px;
+    margin: 18px 0;
+    background: linear-gradient(120deg,
+            #f0f8e9,
+            #d8eee8);
+    border: 1px solid #b4d2c8;
+    border-left: 5px solid #82ad89;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#daftarProyek article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+#daftarProyek article h3 {
+    margin-bottom: 10px;
+    color: #315b45;
+}
+
+#daftarProyek article p {
+    margin-bottom: 8px;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+}
+
+/* Tombol Aksi Project */
+#daftarProyek button {
+    margin: 10px 8px 0 0;
+}
+
+#daftarProyek button[data-action="status"] {
+    background: linear-gradient(135deg,
+            #6eaa7b,
+            #438b72);
+}
+
+#daftarProyek button[data-action="hapus"] {
+    background: linear-gradient(135deg,
+            #d99a9a,
+            #bd6868);
+}
+
+/* Pesan Project Tidak Ditemukan */
+#daftarProyek>p {
+    margin-top: 15px;
+    padding: 15px;
+    background: linear-gradient(120deg,
+            #f0f8e9,
+            #d8eee8);
+    border: 1px solid #b4d2c8;
+    border-radius: 8px;
 }
 
 /* Tampilan HP */
@@ -279,5 +417,19 @@ hr {
     button {
         margin-bottom: 5px;
     }
+
+    #formProyek input[type="text"],
+    #formProyek input[type="number"],
+    #formProyek select,
+    #cariProyek {
+        font-size: 14px;
+    }
+
+    #daftarProyek article {
+        padding: 15px;
+    }
+
+    #daftarProyek button {
+        margin-bottom: 5px;
+    }
 }
-```
