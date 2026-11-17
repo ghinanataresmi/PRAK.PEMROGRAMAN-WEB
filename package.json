@@ -1,0 +1,25 @@
+{
+  "name": "prak.pemrograman-web",
+  "version": "1.0.0",
+  "description": "**Informasi Mahasiswa:**\r * **Nama:** [Ghina Nataresmi Shofuro]\r * **NIM:** [2406116]\r * **Kelas/Prodi:** Teknik Informatika - ITG\r * **Kode MK:** IFRWP5151\r ---\r ## Catatan Modul 1\r - Instalasi & Verifikasi Tools (VS Code, Node.js, Laragon, Git).\r - Uji coba Laragon MySQL berjalan pada Port 3306.\r - Konfigurasi identitas Git global.\r ### Spesifikasi Perangkat,\r Device name\tDESKTOP-PR8PU2E\r Processor\tIntel(R) Core(TM) i5-8350U CPU @ 1.70GHz   1.90 GHz\r Installed RAM\t16,0 GB (15,9 GB usable)\r Device ID\t44D1DCE7-CE53-4684-B5FB-0CE3F52DAA7D\r Product ID\t00331-10000-00001-AA836\r System type\t64-bit operating system, x64-based processor\r Pen and touch\tTouch support with 10 touch points",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghinanataresmi/PRAK.PEMROGRAMAN-WEB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ghinanataresmi/PRAK.PEMROGRAMAN-WEB/issues"
+  },
+  "homepage": "https://github.com/ghinanataresmi/PRAK.PEMROGRAMAN-WEB#readme",
+  "dependencies": {
+    "express": "^5.3.0",
+    "mysql2": "^3.24.6"
+  }
+}
